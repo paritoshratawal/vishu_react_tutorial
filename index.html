@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="header">Hello World</h1>
+    <div><button onclick="add_my_name()">Click Me</button></div>
+    <script>
+        function add_my_name(){
+            var h1_elem = document.getElementById("header");
+            var h1_elem_innerHtmlText = h1_elem.innerHTML;
+            h1_elem_innerHtmlText = h1_elem_innerHtmlText + ', i am vishal barolia';
+            h1_elem.innerHTML = h1_elem_innerHtmlText;
+        }
+    </script>
+</body>
+</html>
